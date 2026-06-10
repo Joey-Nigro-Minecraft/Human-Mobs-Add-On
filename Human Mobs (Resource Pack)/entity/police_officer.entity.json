@@ -3,46 +3,52 @@
   "minecraft:client_entity": {
     "description": {
       "identifier": "joeynigro:police_officer",
-
       "materials": {
         "default": "entity_alphatest"
       },
-
       "textures": {
         "default": "textures/entity/police_officer"
       },
-
       "geometry": {
         "default": "geometry.humanoid.custom"
       },
-
       "animations": {
-        "look_at_target": "animation.common.look_at_target",
-        "move.arms": "animation.humanoid.move.arms",
-        "move.legs": "animation.humanoid.move.legs",
+        "look_at_target_default": "animation.humanoid.look_at_target.default",
+        "look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
+        "look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
+        "move": "animation.humanoid.move",
+        "bob": "animation.humanoid.bob",
         "bow_and_arrow": "animation.humanoid.bow_and_arrow"
       },
-	  
       "scripts": {
         "animate": [
           "look_at_target",
-          {
-            "move.arms": "query.modified_move_speed"
-          },
-          {
-            "move.legs": "query.modified_move_speed"
-          }
+          "move",
+          "bob",
+          "bow_and_arrow"
         ]
       },
-	  
       "render_controllers": [
         "controller.render.default"
       ],
-
       "spawn_egg": {
         "base_color": "#2A4DA6",
         "overlay_color": "#FFD700"
-      }
+      },
+      "animation_controllers": [
+        {
+          "look_at_target": "controller.animation.humanoid.look_at_target"
+        },
+        {
+          "move": "controller.animation.humanoid.move"
+        },
+        {
+          "bob": "controller.animation.humanoid.bob"
+        },
+        {
+          "bow_and_arrow": "controller.animation.humanoid.bow_and_arrow"
+        }
+      ]
     }
   }
 }

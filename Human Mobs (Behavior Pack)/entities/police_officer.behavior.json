@@ -38,6 +38,9 @@
       },
       "minecraft:nameable": {},
       "minecraft:movement.basic": {},
+      "minecraft:behavior.equip_item": {
+        "priority": 3
+      },
       "minecraft:jump.static": {},
       "minecraft:navigation.walk": {
         "can_path_over_water": false,
@@ -67,8 +70,7 @@
             },
             "max_dist": 32
           }
-        ],
-        "reselect_targets": true
+        ]
       },
       "minecraft:behavior.ranged_attack": {
         "priority": 0,
