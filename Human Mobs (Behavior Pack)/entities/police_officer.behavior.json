@@ -35,7 +35,8 @@
       },
 	  
       "minecraft:shooter": {
-        "def": "minecraft:arrow"
+        "def": "minecraft:arrow",
+        "sound": "bow"
       },
 
       "minecraft:collision_box": {
@@ -46,6 +47,10 @@
       "minecraft:nameable": {},
 
       "minecraft:movement.basic": {},
+
+      "minecraft:behavior.equip_item": {
+        "priority": 3
+      },
 
       "minecraft:jump.static": {},
 
@@ -69,6 +74,7 @@
 
       "minecraft:behavior.nearest_attackable_target": {
         "priority": 2,
+        "reselect_targets": true,
         "must_see": true,
         "entity_types": [
           {
@@ -83,23 +89,22 @@
       },
 	  
       "minecraft:behavior.ranged_attack": {
-        "priority": 3,
+        "priority": 0,
         "attack_interval_min": 1.0,
         "attack_interval_max": 2.0,
         "attack_radius": 24.0,
-        "attack_radius_min": 3.0,
         "speed_multiplier": 1.0,
         "target_in_sight_time": 0.5
       },
 	  
       "minecraft:behavior.melee_attack": {
-        "priority": 9,
+        "priority": 4,
         "speed_multiplier": 1.15,
         "track_target": true
       },
 
       "minecraft:behavior.move_towards_target": {
-        "priority": 3,
+        "priority": 5,
         "within_radius": 32,
         "speed_multiplier": 1.05
       },
@@ -110,13 +115,13 @@
       },
 
       "minecraft:behavior.look_at_player": {
-        "priority": 0,
+        "priority": 7,
         "look_distance": 10.0,
         "probability": 0.08
       },
 
       "minecraft:behavior.random_look_around": {
-        "priority": 9
+        "priority": 8
       }
     }
   }
