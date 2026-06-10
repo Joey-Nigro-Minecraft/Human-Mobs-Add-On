@@ -29,10 +29,6 @@
         "value": 0.28
       },
 	  
-      "minecraft:loot": {
-        "table": "loot_tables/entities/police_officer.json"
-      },
-	  
       "minecraft:equipment": {
         "table": "loot_tables/entities/police_officer_gear.json"
       },
