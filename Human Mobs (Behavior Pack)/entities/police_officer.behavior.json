@@ -48,6 +48,10 @@
 
       "minecraft:movement.basic": {},
 
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+
       "minecraft:behavior.equip_item": {
         "priority": 3
       },
@@ -55,11 +59,14 @@
       "minecraft:jump.static": {},
 
       "minecraft:navigation.walk": {
-        "can_path_over_water": true,
+        "can_path_over_water": false,
+        "can_float": true,
         "avoid_damage_blocks": true,
         "can_open_doors": true,
         "can_pass_doors": true
       },
+
+      "minecraft:can_climb": {},
 
       "minecraft:physics": {},
 
@@ -89,11 +96,12 @@
       },
 	  
       "minecraft:behavior.ranged_attack": {
-        "priority": 0,
+        "priority": 3,
         "attack_interval_min": 1.0,
         "attack_interval_max": 2.0,
-        "attack_radius": 24.0,
-        "speed_multiplier": 1.0,
+        "attack_radius": 16.0,
+        "attack_radius_min": 4.0,
+        "speed_multiplier": 1.15,
         "target_in_sight_time": 0.5
       },
 	  
