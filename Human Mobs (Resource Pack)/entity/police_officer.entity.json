@@ -23,6 +23,18 @@
         "bow_and_arrow": "animation.humanoid.bow_and_arrow"
       },
 	  
+      "scripts": {
+        "animate": [
+          "look_at_target",
+          {
+            "move.arms": "query.modified_move_speed"
+          },
+          {
+            "move.legs": "query.modified_move_speed"
+          }
+        ]
+      },
+	  
       "render_controllers": [
         "controller.render.default"
       ],
@@ -31,13 +43,6 @@
         "base_color": "#2A4DA6",
         "overlay_color": "#FFD700"
       },
-      "scripts": {
-        "animate": [
-          "look_at_target",
-          "move.arms",
-          "move.legs"
-        ]
-      }
     }
   }
 }
