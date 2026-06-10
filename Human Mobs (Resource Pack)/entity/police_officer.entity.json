@@ -21,6 +21,10 @@
         "bow_and_arrow": "animation.humanoid.bow_and_arrow"
       },
       "scripts": {
+        "pre_animation": [
+          "v.gliding_speed_value = math.max(q.modified_move_speed, 0.01);",
+          "v.tcos0 = (math.cos(q.modified_distance_moved * 38.17) * q.modified_move_speed / v.gliding_speed_value) * 57.3;"
+        ],
         "animate": [
           "look_at_target",
           "move",
