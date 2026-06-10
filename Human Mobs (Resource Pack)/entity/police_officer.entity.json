@@ -39,21 +39,7 @@
       "spawn_egg": {
         "base_color": "#2A4DA6",
         "overlay_color": "#FFD700"
-      },
-      "animation_controllers": [
-        {
-          "look_at_target": "controller.animation.humanoid.look_at_target"
-        },
-        {
-          "move": "controller.animation.humanoid.move"
-        },
-        {
-          "bob": "controller.animation.humanoid.bob"
-        },
-        {
-          "bow_and_arrow": "controller.animation.humanoid.bow_and_arrow"
-        }
-      ]
+      }
     }
   }
 }
