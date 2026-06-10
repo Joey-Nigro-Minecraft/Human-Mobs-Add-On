@@ -1,0 +1,39 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Human Mobs",
+    "description": "by Joey Nigro",
+    "uuid": "34e84eec-e290-475a-bb19-bdac8b0faea4",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      17,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "84b5a40f-8c4e-4ba6-43a6-111384e9f237",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "5f23715d-6a21-e87c-dfe9-7726471120e8",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}
