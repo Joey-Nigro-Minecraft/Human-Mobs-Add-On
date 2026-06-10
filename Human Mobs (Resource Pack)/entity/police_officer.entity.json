@@ -22,10 +22,6 @@
         "move.legs": "animation.humanoid.move.legs",
         "bow_and_arrow": "animation.humanoid.bow_and_arrow"
       },
-	  
-      "render_controllers": [
-        "controller.render.default"
-      ],
 
       "spawn_egg": {
         "base_color": "#2A4DA6",
