@@ -20,7 +20,7 @@
         "look_at_target": "animation.common.look_at_target",
         "move.arms": "animation.humanoid.move.arms",
         "move.legs": "animation.humanoid.move.legs",
-        "bow_and_arrow": "animation.humanoid.bow_and_arrow",
+        "bow_and_arrow": "animation.humanoid.bow_and_arrow"
       },
 	  
       "render_controllers": [
