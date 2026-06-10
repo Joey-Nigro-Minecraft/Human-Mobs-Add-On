@@ -11,8 +11,8 @@
     "components": {
       "minecraft:type_family": {
         "family": [
-          "police_officer",,
-          "human"
+          "police_officer",
+          "human",
           "mob"
         ]
       },
