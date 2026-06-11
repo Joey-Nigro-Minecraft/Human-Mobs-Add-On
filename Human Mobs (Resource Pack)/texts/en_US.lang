@@ -1,2 +1,4 @@
 entity.joeynigro:police_officer.name=Police Officer
 item.spawn_egg.entity.joeynigro:police_officer.name=Spawn Police Officer
+entity.joeynigro:farmer.name=Farmer
+item.spawn_egg.entity.joeynigro:farmer.name=Spawn Farmer

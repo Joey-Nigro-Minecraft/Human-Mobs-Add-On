@@ -1,0 +1,44 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "joeynigro:farmer",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/human/farmer"
+      },
+      "geometry": {
+        "default": "geometry.humanoid.custom"
+      },
+      "animations": {
+        "look_at_target_default": "animation.humanoid.look_at_target.default",
+        "look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
+        "look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
+        "move": "animation.humanoid.move",
+        "bob": "animation.player.bob",
+        "look_at_target": "controller.animation.humanoid.look_at_target"
+      },
+      "scripts": {
+        "pre_animation": [
+          "v.gliding_speed_value = math.max(q.modified_move_speed, 0.01);",
+          "v.tcos0 = (math.cos(q.modified_distance_moved * 38.17) * q.modified_move_speed / v.gliding_speed_value) * 57.3;"
+        ],
+        "animate": [
+          "look_at_target",
+          "move",
+          "bob"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "spawn_egg": {
+        "base_color": "#8B5A2B",
+        "overlay_color": "#F1C232"
+      },
+      "enable_attachables": true
+    }
+  }
+}
