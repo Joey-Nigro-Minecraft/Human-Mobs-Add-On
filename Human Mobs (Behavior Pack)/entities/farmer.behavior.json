@@ -1,0 +1,148 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "joeynigro:farmer",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "farmer",
+          "human",
+          "mob"
+        ]
+      },
+      "minecraft:health": {
+        "value": 24,
+        "max": 24
+      },
+      "minecraft:movement": {
+        "value": 0.25
+      },
+      "minecraft:equipment": {
+        "table": "loot_tables/entities/farmer_gear.json"
+      },
+      "minecraft:inventory": {
+        "inventory_size": 8,
+        "private": true
+      },
+      "minecraft:shareables": {
+        "items": [
+          {
+            "item": "minecraft:bread",
+            "want_amount": 3,
+            "surplus_amount": 6,
+            "stored_in_inventory": true
+          },
+          {
+            "item": "minecraft:carrot",
+            "want_amount": 60,
+            "surplus_amount": 24,
+            "stored_in_inventory": true
+          },
+          {
+            "item": "minecraft:potato",
+            "want_amount": 60,
+            "surplus_amount": 24,
+            "stored_in_inventory": true
+          },
+          {
+            "item": "minecraft:beetroot",
+            "want_amount": 60,
+            "surplus_amount": 24,
+            "stored_in_inventory": true
+          },
+          {
+            "item": "minecraft:wheat_seeds",
+            "want_amount": 64,
+            "surplus_amount": 64,
+            "stored_in_inventory": true,
+            "pickup_only": true
+          },
+          {
+            "item": "minecraft:beetroot_seeds",
+            "want_amount": 64,
+            "surplus_amount": 64,
+            "stored_in_inventory": true,
+            "pickup_only": true
+          },
+          {
+            "item": "minecraft:bone_meal",
+            "want_amount": 64,
+            "surplus_amount": 64,
+            "stored_in_inventory": true
+          },
+          {
+            "item": "minecraft:wheat",
+            "want_amount": 45,
+            "surplus_amount": 18,
+            "craft_into": "minecraft:bread",
+            "stored_in_inventory": true
+          }
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:nameable": {},
+      "minecraft:movement.basic": {},
+      "minecraft:behavior.equip_item": {
+        "priority": 3
+      },
+      "minecraft:jump.static": {},
+      "minecraft:navigation.walk": {
+        "can_path_over_water": false,
+        "can_float": true,
+        "avoid_damage_blocks": true,
+        "can_open_doors": true,
+        "can_pass_doors": true
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:behavior.panic": {
+        "priority": 1,
+        "speed_multiplier": 1.2
+      },
+      "minecraft:behavior.pickup_items": {
+        "priority": 2,
+        "max_dist": 3,
+        "goal_radius": 2,
+        "speed_multiplier": 0.6,
+        "can_pickup_to_hand_or_equipment": false
+      },
+      "minecraft:behavior.harvest_farm_block": {
+        "priority": 3,
+        "speed_multiplier": 0.6,
+        "search_range": 16,
+        "search_height": 2,
+        "search_count": 0
+      },
+      "minecraft:behavior.fertilize_farm_block": {
+        "priority": 4,
+        "speed_multiplier": 0.6,
+        "search_range": 8,
+        "search_height": 2,
+        "search_count": 9
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 0.9
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 10.0,
+        "probability": 0.08
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      }
+    }
+  }
+}
