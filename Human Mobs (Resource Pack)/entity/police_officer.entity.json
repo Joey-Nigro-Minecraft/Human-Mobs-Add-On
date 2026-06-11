@@ -19,7 +19,8 @@
         "move": "animation.humanoid.move",
         "bob": "animation.player.bob",
         "bow_and_arrow": "animation.humanoid.bow_and_arrow",
-		"look_at_target": "controller.animation.humanoid.look_at_target"
+        "look_at_target": "controller.animation.humanoid.look_at_target",
+        "bow_and_arrow_controller": "controller.animation.humanoid.bow_and_arrow"
       },
       "scripts": {
         "pre_animation": [
@@ -30,7 +31,7 @@
           "look_at_target",
           "move",
           "bob",
-          "bow_and_arrow"
+          "bow_and_arrow_controller"
         ]
       },
       "render_controllers": [
