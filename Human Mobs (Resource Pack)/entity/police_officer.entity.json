@@ -7,7 +7,7 @@
         "default": "entity_alphatest"
       },
       "textures": {
-        "default": "textures/entity/police_officer"
+        "default": "textures/entity/human/police_officer"
       },
       "geometry": {
         "default": "geometry.humanoid.custom"
